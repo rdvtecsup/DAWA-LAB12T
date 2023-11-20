@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let post of posts">
+        {{ post.content }}
+        <button [routerLink]="['/post',post.id]">Ver detalles</button>
+    </li>
+</ul>

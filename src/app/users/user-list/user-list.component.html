@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let user of users">
+        {{ user.name }}
+        <!-- <button (click)="showUserDetails(user.id)">Ver detalles</button> -->
+        <button [routerLink]="['/user',user.id]">Ver detalles</button>
+    </li>
+</ul>
